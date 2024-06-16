@@ -1,8 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-  - name: webserveracr.azurecr.io/mic-orders
-    newName: webserveracr.azurecr.io/mic-orders
-    newTag: "9b0a74dd"
 resources:
   - ../../base
+patches:
+  - path: webserver/backend-deployment-patch.yaml
