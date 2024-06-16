@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver-backend
+  namespace: webserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webserver-backend
+  template:
+    metadata:
+      labels:
+        app: webserver-backend
+    spec:
+      containers:
+        - name: webserver-backend
+          image: placeholder:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "1024Mi"
+              cpu: "250m"
+            limits:
+              memory: "1024Mi"
+              cpu: "250m"
