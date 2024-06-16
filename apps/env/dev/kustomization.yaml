@@ -3,6 +3,6 @@ kind: Kustomization
 images:
   - name: webserveracr.azurecr.io/mic-orders
     newName: webserveracr.azurecr.io/mic-orders
-    newTag: "07522395"
+    newTag: "05540119"
 resources:
   - ../../base
