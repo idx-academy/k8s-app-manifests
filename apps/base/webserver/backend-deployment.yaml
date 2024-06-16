@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: webserver-backend
-          image: placeholder:latest
+          image: webserveracr.azurecr.io/mic-orders
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
