@@ -1,8 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-  - name: webserveracr.azurecr.io/mic-orders:07522395
-    newName: webserveracr.azurecr.io/mic-orders:07522395
+  - name: webserveracr.azurecr.io/mic-orders
+    newName: webserveracr.azurecr.io/mic-orders
     newTag: "07522395"
 resources:
   - ../../base
