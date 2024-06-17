@@ -13,10 +13,6 @@ spec:
       labels:
         app: webserver-backend
     spec:
-      dnsConfig:
-        options:
-          - name: ndots
-            value: "1"
       containers:
         - name: webserver-backend
           image: webserveracr.azurecr.io/mic-orders
@@ -36,7 +32,7 @@ spec:
             - name: DB_PORT
               value: "5432"
             - name: DB_HOST
-              value: postgres.webserver.svc.cluster.local:5432
+              value: postgres.webserver.svc.cluster.local
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
