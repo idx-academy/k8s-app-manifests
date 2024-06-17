@@ -21,18 +21,18 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              memory: "1024Mi"
+              memory: "512Mi"
               cpu: "500m"
             limits:
               memory: "1024Mi"
-              cpu: "500m"
+              cpu: "1000m"
           env:
             - name: DB_NAME
               value: retail
             - name: DB_PORT
               value: "5432"
             - name: DB_HOST
-              value: postgres.webserver.svc.cluster.local:5432
+              value: postgres:5432
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
