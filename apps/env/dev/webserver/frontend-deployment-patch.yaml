@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver-frontend
+  namespace: webserver
+spec:
+  template:
+    spec:
+      containers:
+        - name: webserver-frontend
+          image: webserveracr.azurecr.io/spa-orders:73d81ddd

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver-frontend
+  namespace: webserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webserver-frontend
+  template:
+    metadata:
+      labels:
+        app: webserver-frontend
+    spec:
+      containers:
+        - name: webserver-frontend
+          image: webserveracr.azurecr.io/spa-orders
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "100m"
