@@ -30,7 +30,7 @@ spec:
             - name: DB_NAME
               value: retail
             - name: DB_PORT
-              value: 5432
+              value: "5432"
             - name: DB_HOST
               value: postgres.webserver.svc.cluster.local:5432
             - name: DB_USER
