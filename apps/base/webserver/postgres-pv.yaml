@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: azure-disk-pv
+spec:
+  capacity:
+    storage: 32Gi
+  accessModes:
+    - ReadWriteOnce
+  azureDisk:
+    diskName: webserver-disk-pv
+    diskURI: /subscriptions/57f23ce6-83d1-4c5d-a935-afc11eef4833/resourceGroups/academy-rg/providers/Microsoft.Compute/disks/webserver-disk-pv
+    kind: Managed
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: azure-disk

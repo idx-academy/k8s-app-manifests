@@ -3,3 +3,7 @@ resources:
   - webserver/backend-service.yaml
   - webserver/frontend-deployment.yaml
   - webserver/frontend-service.yaml
+  - webserver/postgres-pv.yaml
+  - webserver/postgres-pvc.yaml
+  - webserver/postgres-ss.yaml
+  - webserver/postgres-service.yaml

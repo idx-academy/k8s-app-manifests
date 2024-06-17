@@ -26,3 +26,20 @@ spec:
             limits:
               memory: "1024Mi"
               cpu: "500m"
+          env:
+            - name: DB_NAME
+              value: retail
+            - name: DB_PORT
+              value: 5432
+            - name: DB_HOST
+              value: postgres.webserver.svc.cluster.local:5432
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-username
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-password
+                  key: password
