@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: webserver-frontend
-          image: webserveracr.azurecr.io/spa-orders:73d81ddd
+          image: webserveracr.azurecr.io/spa-orders:937fae72
