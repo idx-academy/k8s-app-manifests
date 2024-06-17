@@ -1,3 +1,5 @@
 resources:
   - webserver/backend-deployment.yaml
   - webserver/backend-service.yaml
+  - webserver/frontend-deployment.yaml
+  - webserver/frontend-service.yaml
