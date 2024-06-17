@@ -32,7 +32,7 @@ spec:
             - name: DB_PORT
               value: "5432"
             - name: DB_HOST
-              value: postgres:5432
+              value: postgres.webserver.svc.cluster.local:5432
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
