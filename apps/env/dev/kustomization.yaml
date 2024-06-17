@@ -4,3 +4,4 @@ resources:
   - ../../base
 patches:
   - path: webserver/backend-deployment-patch.yaml
+  - path: webserver/frontend-deployment-patch.yaml
