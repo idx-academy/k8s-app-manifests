@@ -27,8 +27,8 @@ spec:
               memory: "1024Mi"
               cpu: "1000m"
           env:
-            - name: server.use-forward-headers
-              value: "true"
+            - name: "server.use-forward-headers"
+              value: true
             - name: DB_NAME
               value: retail
             - name: DB_PORT
