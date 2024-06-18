@@ -27,8 +27,8 @@ spec:
               memory: "1024Mi"
               cpu: "1000m"
           env:
-            - name: logging.level.root
-              value: DEBUG
+            - name: springdoc.swagger-ui.configUrl
+              value: /api/retail/swagger-config.json
             - name: DB_NAME
               value: retail
             - name: DB_PORT
