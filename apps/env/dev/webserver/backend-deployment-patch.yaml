@@ -8,4 +8,4 @@ spec:
     spec:
       containers:
         - name: webserver-backend
-          image: webserveracr.azurecr.io/mic-orders:3bb2d935
+          image: webserveracr.azurecr.io/mic-orders:07480ec2
