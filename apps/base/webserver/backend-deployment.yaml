@@ -28,7 +28,7 @@ spec:
               cpu: "1000m"
           env:
             - name: "server.use-forward-headers"
-              value: true
+              value: "true"
             - name: DB_NAME
               value: retail
             - name: DB_PORT
