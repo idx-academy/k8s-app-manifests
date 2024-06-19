@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   - ../../../base/backend
 images:
-  - name: webserver-backend
+  - name: webserveracr.azurecr.io/mic-orders
     newName: webserveracr.azurecr.io/mic-orders
     newTag: 07480ec2
