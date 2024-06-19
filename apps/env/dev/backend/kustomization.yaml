@@ -4,4 +4,5 @@ resources:
 - ../../../base/backend
 images:
 - name: webserveracr.azurecr.io/mic-orders
-  newName: webserveracr.azurecr.io/
+  newName: webserveracr.azurecr.io/mic-orders
+  newTag: 48eea496
