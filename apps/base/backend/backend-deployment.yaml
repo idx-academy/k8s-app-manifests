@@ -21,11 +21,11 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              memory: "400Mi"
+              memory: "1024Mi"
               cpu: "512m"
             limits:
               memory: "1024Mi"
-              cpu: "400Mi"
+              cpu: "512m"
           env:
             - name: DB_NAME
               value: retail
