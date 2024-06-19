@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../../base/frontend
+images:
+- name: spa-orders
+  newName: webserveracr.azurecr.io/spa-orders
+  newTag: 937fae72

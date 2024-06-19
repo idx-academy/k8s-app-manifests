@@ -27,8 +27,6 @@ spec:
               memory: "1024Mi"
               cpu: "1000m"
           env:
-            - name: server.forward-headers-strategy
-              value: native
             - name: DB_NAME
               value: retail
             - name: DB_PORT

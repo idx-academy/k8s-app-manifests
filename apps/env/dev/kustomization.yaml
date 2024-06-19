@@ -1,7 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../base
-patches:
-  - path: webserver/backend-deployment-patch.yaml
-  - path: webserver/frontend-deployment-patch.yaml
+  - database
+  - backend
+  - frontend
