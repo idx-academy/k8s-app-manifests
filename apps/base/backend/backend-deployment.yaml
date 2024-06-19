@@ -22,10 +22,10 @@ spec:
           resources:
             requests:
               memory: "512Mi"
-              cpu: "500m"
+              cpu: "250m"
             limits:
               memory: "1024Mi"
-              cpu: "1000m"
+              cpu: "500m"
           env:
             - name: DB_NAME
               value: retail
