@@ -4,5 +4,5 @@ resources:
   - ../../../base/frontend
 images:
   - name: webserver-frontend
-    newName: webserveracr.azurecr.io/spa-orders:937fae72
+    newName: webserveracr.azurecr.io/spa-orders
     newTag: 937fae72
