@@ -34,16 +34,17 @@ spec:
             - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
-                  name: postgres
-                  key: username
+                  name: postgres-secrets
+                  key: postgres-username
             - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres
-                  key: password
+                  name: postgres-secrets
+                  key: postgres-password
           volumeMounts:
             - name: azure-disk-pvc
               mountPath: /var/lib/postgresql/data
+      serviceAccountName: workload-identity-sa
       volumes:
         - name: azure-disk-pvc
           persistentVolumeClaim:

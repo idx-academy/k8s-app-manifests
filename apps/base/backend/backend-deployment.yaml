@@ -13,6 +13,7 @@ spec:
       labels:
         app: webserver-backend
     spec:
+      serviceAccountName: workload-identity-sa
       containers:
         - name: webserver-backend
           image: webserveracr.azurecr.io/mic-orders
@@ -36,10 +37,10 @@ spec:
             - name: DB_USER
               valueFrom:
                 secretKeyRef:
-                  name: postgres
-                  key: username
+                  name: postgres-secrets
+                  key: postgres-username
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: postgres
-                  key: password
+                  name: postgres-secrets
+                  key: postgres-password
