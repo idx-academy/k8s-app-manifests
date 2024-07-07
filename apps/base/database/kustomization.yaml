@@ -5,5 +5,6 @@ resources:
   - postgres-pvc.yaml
   - postgres-ss.yaml
   - postgres-service.yaml
+  - serviceaccount.yaml
   - secretstore.yaml
   - externalsecret.yaml
