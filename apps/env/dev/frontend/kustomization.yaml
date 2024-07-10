@@ -5,4 +5,4 @@ resources:
 images:
 - name: webserveracr.azurecr.io/spa-orders
   newName: webserveracr.azurecr.io/spa-orders
-  newTag: 2bccc889
+  newTag: 25ebf24e
