@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webserver-frontend-ingress
+  namespace: webserver
+  annotations:
+    spec.ingressClassName: "traefik"
+spec:
+  rules:
+    - host: idxacademy.xyz
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webserver-frontend
+                port:
+                  number: 8080
