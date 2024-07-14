@@ -1,8 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ../../../base/mocked-services
+- ../../../base/mocked-services
 images:
-  - name: webserveracr.azurecr.io/mocked-services
-    newName: webserveracr.azurecr.io/mocked-services
-    newTag: a72f9095
+- name: webserveracr.azurecr.io/mocked-services
+  newName: webserveracr.azurecr.io/mocked-services
+  newTag: 9cdb05fb
