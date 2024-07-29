@@ -7,7 +7,6 @@ metadata:
 spec:
   selector:
     app: mocked-services
-  type: NodePort
   ports:
     - protocol: TCP
       port: 8080
