@@ -5,4 +5,4 @@ resources:
 images:
 - name: webserveracr.azurecr.io/mic-orders
   newName: webserveracr.azurecr.io/mic-orders
-  newTag: b0dff731
+  newTag: dd3ca363
