@@ -30,6 +30,8 @@ spec:
           env:
             - name: MOCKED_SERVICES_HOST
               value: mocked_services.webserver.svc.cluster.local
+            - name: MOCKED_SERVICES_PORT
+              value: "8080"
             - name: DB_NAME
               value: retail
             - name: DB_PORT
