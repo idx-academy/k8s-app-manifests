@@ -28,6 +28,8 @@ spec:
               memory: "1024Mi"
               cpu: "512m"
           env:
+            - name: MOCKED_SERVICES_HOST
+              value: mocked_services.webserver.svc.cluster.local
             - name: DB_NAME
               value: retail
             - name: DB_PORT
