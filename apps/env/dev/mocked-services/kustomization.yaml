@@ -5,4 +5,4 @@ resources:
 images:
 - name: webserveracr.azurecr.io/mocked-services
   newName: webserveracr.azurecr.io/mocked-services
-  newTag: 14bf6c64
+  newTag: 4cee7652
